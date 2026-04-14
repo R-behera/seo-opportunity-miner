@@ -1,0 +1,46 @@
+{
+  "slug": "seo-opportunity-miner",
+  "title": "SEO Opportunity Miner",
+  "project_type": "llm",
+  "domain": "Growth AI",
+  "summary": "Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.",
+  "tags": [
+    "seo",
+    "content",
+    "ai"
+  ],
+  "accent": "#3d5a80",
+  "dashboard_metrics": [
+    {
+      "label": "Resolution Rate",
+      "value": "69%",
+      "delta": "+5.8%"
+    },
+    {
+      "label": "Answer Quality",
+      "value": "91%",
+      "delta": "+2.2%"
+    },
+    {
+      "label": "Ops Time Saved",
+      "value": "14h",
+      "delta": "+3h"
+    }
+  ],
+  "sample_features": {
+    "query": "Summarize the highest priority risk and recommended next step.",
+    "audience": "analytics"
+  },
+  "sample_metrics": {
+    "acquisition": 40.9,
+    "activation": 40.5,
+    "retention": 52.8,
+    "revenue": 85.3
+  },
+  "knowledge_base": [
+    "SEO Opportunity Miner is positioned as a Growth AI starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on seo, content, ai."
+  ]
+}
