@@ -6,13 +6,12 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>SEO Opportunity Miner</title>
           <link rel="stylesheet" href="./styles.css">
-          <style>:root { --accent: #3d5a80; }</style>
         </head>
-        <body>
-          <div class="page">
+        <body class="surface-sand">
+          <div class="page layout-rail eyebrow-outline headline-normal modules-3 hero-align-split">
             <section class="hero">
               <div class="panel hero-copy">
-                <span class="eyebrow">LLM Workflow App</span>
+                <span class="eyebrow" data-health>Workflow Copilot</span>
                 <h1 id="project-title">SEO Opportunity Miner</h1>
                 <p id="project-summary" class="lead">Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.</p>
                 <ul id="project-tags" class="tag-list">
@@ -26,55 +25,71 @@
 <article class='card'><span>Ops Time Saved</span><strong>14h</strong><em>+3h</em></article>
                 </div>
                 <div class="mini-grid">
-                  <article class='mini-card'><span>Project Type</span><strong>LLM</strong></article><article class='mini-card'><span>Domain</span><strong>Growth AI</strong></article><article class='mini-card'><span>Interface</span><strong>FastAPI + Browser UI</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                  <article class='mini-card'><span>Project Type</span><strong>LLM</strong></article><article class='mini-card'><span>Domain</span><strong>Growth AI</strong></article><article class='mini-card'><span>Application</span><strong>Workflow Copilot</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
                 </div>
               </div>
             </section>
             <section class="app-grid">
-              <article class="panel module">
-                <div class="module-header">
-                  <span>Application 01</span>
-                  <h2>Workflow Inputs</h2>
-                  <p>Simulate the model-side classification or prioritization decision from input features.</p>
-                </div>
-                <textarea id="score-input"></textarea>
-                <div class="button-row">
-                  <button id="run-score">Run Scoring</button>
-                  <button id="load-defaults" class="secondary" type="button">Reload Defaults</button>
-                </div>
-                <pre id="score-output"></pre>
-              </article>
-              <article class="panel module">
-                <div class="module-header">
-                  <span>Application 02</span>
-                  <h2>Quality Review</h2>
-                  <p>Compare workflow metrics and summarize the largest operational change.</p>
-                </div>
-                <textarea id="analyze-input"></textarea>
-                <div class="button-row">
-                  <button id="run-analyze">Run Analysis</button>
-                </div>
-                <pre id="analyze-output"></pre>
-              </article>
-              <article class="panel module">
-                <div class="module-header">
-                  <span>Application 03</span>
-                  <h2>Copilot Prompt</h2>
-                  <p>Ask a grounded question and inspect the supporting context used in the answer.</p>
-                </div>
-                <textarea id="query-input" class="query-input"></textarea>
-                <div class="button-row">
-                  <button id="run-query">Run Query</button>
-                </div>
-                <pre id="query-output"></pre>
-              </article>
+              <article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Workflow 01</span>
+            <h2>Routing Simulator</h2>
+            <p>Preview how a request gets prioritized or routed through the workflow.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;features&quot;: {
+    &quot;query&quot;: &quot;Summarize the highest priority risk and recommended next step.&quot;,
+    &quot;audience&quot;: &quot;analytics&quot;
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/score" data-input-mode="json">Simulate Route</button>
+          </div>
+          <pre class="js-output">Routing score and top signals will appear here.</pre>
+        </article>
+<article class="panel module js-module span-wide">
+          <div class="module-header">
+            <span>Workflow 02</span>
+            <h2>Operator Brief</h2>
+            <p>Generate a concise recommended action set for the current workflow state.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;prompt&quot;: &quot;Recommend the next best action for SEO Opportunity Miner.&quot;,
+  &quot;features&quot;: {
+    &quot;query&quot;: &quot;Summarize the highest priority risk and recommended next step.&quot;,
+    &quot;audience&quot;: &quot;analytics&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 40.9,
+    &quot;activation&quot;: 40.5,
+    &quot;retention&quot;: 52.8,
+    &quot;revenue&quot;: 85.3
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Generate Brief</button>
+          </div>
+          <pre class="js-output">Operator brief and recommended actions will appear here.</pre>
+        </article>
+<article class="panel module js-module span-normal">
+  <div class="module-header">
+    <span>Workflow 03</span>
+    <h2>Grounded Prompt</h2>
+    <p>Ask a targeted question and inspect the support context behind the answer.</p>
+  </div>
+  <textarea class="js-input module-input-text">What is the top priority recommendation for SEO Opportunity Miner?</textarea>
+  <div class="button-row">
+    <button class="js-run" data-endpoint="/query" data-input-mode="text">Run Prompt</button>
+  </div>
+  <pre class="js-output">Grounded answer and context excerpts will appear here.</pre>
+</article>
             </section>
             <footer class="footer">
-              <span>Data Science + AI + LLM + RAG Portfolio</span>
+              <span>Growth AI • LLM • Workflow Copilot</span>
               <span>seo-opportunity-miner</span>
             </footer>
           </div>
-          <script id="bootstrap-data" type="application/json">{"project": {"slug": "seo-opportunity-miner", "title": "SEO Opportunity Miner", "project_type": "llm", "domain": "Growth AI", "summary": "Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.", "tags": ["seo", "content", "ai"]}, "sample_features": {"query": "Summarize the highest priority risk and recommended next step.", "audience": "analytics"}, "sample_metrics": {"acquisition": 40.9, "activation": 40.5, "retention": 52.8, "revenue": 85.3}, "sample_query": "What is the top priority recommendation?", "knowledge_base": ["SEO Opportunity Miner is positioned as a Growth AI starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on seo, content, ai."], "dashboard_metrics": [{"label": "Resolution Rate", "value": "69%", "delta": "+5.8%"}, {"label": "Answer Quality", "value": "91%", "delta": "+2.2%"}, {"label": "Ops Time Saved", "value": "14h", "delta": "+3h"}]}</script>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "seo-opportunity-miner", "title": "SEO Opportunity Miner", "project_type": "llm", "domain": "Growth AI", "summary": "Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.", "tags": ["seo", "content", "ai"]}, "app_archetype": "copilot", "ui_profile": {"layout": "rail", "surface": "sand", "font_stack": "\"DM Sans\", \"Segoe UI\", sans-serif", "radius": 23, "shadow": 55, "eyebrow_style": "outline", "module_columns": 3, "hero_align": "split", "headline_mode": "normal"}, "app_modules": [{"label": "Workflow 01", "title": "Routing Simulator", "description": "Preview how a request gets prioritized or routed through the workflow.", "endpoint": "/score", "input_mode": "json", "cta": "Simulate Route", "prefill": "{\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  }\n}", "hint": "Routing score and top signals will appear here.", "span": "normal"}, {"label": "Workflow 02", "title": "Operator Brief", "description": "Generate a concise recommended action set for the current workflow state.", "endpoint": "/recommend", "input_mode": "json", "cta": "Generate Brief", "prefill": "{\n  \"prompt\": \"Recommend the next best action for SEO Opportunity Miner.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  },\n  \"metrics\": {\n    \"acquisition\": 40.9,\n    \"activation\": 40.5,\n    \"retention\": 52.8,\n    \"revenue\": 85.3\n  }\n}", "hint": "Operator brief and recommended actions will appear here.", "span": "wide"}, {"label": "Workflow 03", "title": "Grounded Prompt", "description": "Ask a targeted question and inspect the support context behind the answer.", "endpoint": "/query", "input_mode": "text", "cta": "Run Prompt", "prefill": "What is the top priority recommendation for SEO Opportunity Miner?", "hint": "Grounded answer and context excerpts will appear here.", "span": "normal"}], "sample_features": {"query": "Summarize the highest priority risk and recommended next step.", "audience": "analytics"}, "sample_metrics": {"acquisition": 40.9, "activation": 40.5, "retention": 52.8, "revenue": 85.3}, "knowledge_base": ["SEO Opportunity Miner is positioned as a Growth AI starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Turn noisy keyword and content inputs into prioritized SEO content opportunities and follow-up actions.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on seo, content, ai."], "dashboard_metrics": [{"label": "Resolution Rate", "value": "69%", "delta": "+5.8%"}, {"label": "Answer Quality", "value": "91%", "delta": "+2.2%"}, {"label": "Ops Time Saved", "value": "14h", "delta": "+3h"}]}</script>
           <script src="./app.js"></script>
         </body>
         </html>
